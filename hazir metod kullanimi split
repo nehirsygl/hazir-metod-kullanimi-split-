@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp27
+{
+    internal class Program
+    {
+         
+         /*
+         soru2 Hazır Metod Kullanımın Kullanıcıdan bir cümle girmesini isteyin ve bu cümledeki kelime sayısını 
+         hesaplayıp ekrana yazdıran bir program yazınız.
+         Kelime sayısını hesaplamak için Split() metodunu kullanabilirsiniz.*/
+
+        static void Main(string[] args)
+        {
+            string cumle;
+            Console.WriteLine(" bir cümle giriniz:"); 
+            cumle = Console.ReadLine();
+            string[] kelimeler = cumle.Split(' ');
+            Console.WriteLine("Kelime Sayısı :" + kelimeler.Length);
+
+
+        }
+    }
+}
